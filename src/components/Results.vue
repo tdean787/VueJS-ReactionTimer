@@ -15,7 +15,7 @@ export default {
   },
   mounted() {
     if (this.score <= 160) {
-      this.resultText = "Not bad! Faster than average";
+      this.resultText = "Light speed!";
     } else if (this.score <= 225) {
       this.resultText = "About average reaction speed";
     } else if (this.score <= 325) {
