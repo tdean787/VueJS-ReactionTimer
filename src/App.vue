@@ -47,4 +47,13 @@ export default {
   color: #444;
   margin-top: 60px;
 }
+button {
+  background: #60d748;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 </style>
