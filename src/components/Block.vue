@@ -1,6 +1,6 @@
 <template>
   <div @click="stopTimer" class="block" v-if="showBlock">
-    Click Me
+    CLICK ME
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
   <h1>Reaction Timer</h1>
   <button @click="start" :disabled="isPlaying">Play Game</button>
-  <Block @reactTime="logTime" v-if="isPlaying" :delay="delay" />
-  <Results v-if="showResults" :playing="isPlaying" :score="score" />
+  <Block @reactTime="end" v-if="isPlaying" :delay="delay" />
+  <Results v-if="showResults" :score="score" />
 </template>
 
 <script>
@@ -29,7 +29,7 @@ export default {
       this.isPlaying = true;
       this.showResults = false;
     },
-    logTime(data) {
+    end(data) {
       this.score = data;
       this.isPlaying = false;
       this.showResults = true;
